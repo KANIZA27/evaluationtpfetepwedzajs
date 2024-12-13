@@ -1,0 +1,85 @@
+/* Corps de la page */
+body {
+  font-family: Arial, sans-serif; /* Définit la police principale pour le texte du site. */
+  line-height: 1.6; /* Définit une hauteur de ligne pour améliorer la lisibilité du texte. */
+  background-color: wheat; /* Définit une couleur de fond gris clair pour la page. */
+  color: #333; /* Définit la couleur principale du texte en gris foncé. */
+  margin: 0; /* Supprime les marges par défaut autour de la page. */
+  padding: 0; /* Supprime les marges intérieures par défaut. */
+}
+
+/* Titres */
+h1, h2, h3 {
+  text-align: center; /* Centre les titres horizontalement sur la page. */
+  color: #444; /* Donne une couleur légèrement plus claire que le texte principal. */
+}
+
+/* Liste des artisans */
+ul {
+  list-style-type: none; /* Supprime les puces par défaut des listes non ordonnées. */
+  padding: 0; /* Supprime les marges intérieures de la liste. */
+  margin: 20px auto; /* Ajoute une marge verticale de 20px et centre horizontalement. */
+  max-width: 600px; /* Limite la largeur de la liste à 600px pour une mise en page étroite. */
+}
+
+ul li {
+  background: wheat; /* Ajoute un fond blanc à chaque élément de liste. */
+  margin: 10px 0; /* Ajoute une marge verticale de 10px entre les éléments. */
+  padding: 10px; /* Ajoute un espace intérieur de 10px pour les éléments. */
+  border-radius: 5px; /* Ajoute des coins légèrement arrondis pour un style moderne. */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour créer un effet de relief. */
+}
+
+/* Formulaire */
+form {
+  max-width: 600px; /* Limite la largeur du formulaire à 600px. */
+  margin: 20px auto; /* Centre le formulaire horizontalement et ajoute une marge verticale. */
+  padding: 20px; /* Ajoute un espace intérieur de 20px. */
+  background: wheat; /* Fond blanc pour le formulaire. */
+  border-radius: 5px; /* Coins arrondis pour un style moderne. */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet visuel. */
+}
+
+form input {
+  display: block; /* Force les champs du formulaire à occuper une ligne entière. */
+  width: calc(100% - 20px); /* Largeur ajustée pour tenir compte des marges. */
+  margin: 10px auto; /* Centre chaque champ et ajoute une marge verticale. */
+  padding: 10px; /* Ajoute un espace intérieur de 10px. */
+  border: 1px solid #ddd; /* Bordure fine et grise pour délimiter les champs. */
+  border-radius: 5px; /* Coins arrondis pour correspondre au style général. */
+}
+
+form button {
+  display: block; /* Force le bouton à occuper une ligne entière. */
+  width: 100%; /* Le bouton occupe toute la largeur disponible. */
+  padding: 10px; /* Ajoute un espace intérieur de 10px. */
+  border: none; /* Supprime les bordures par défaut du bouton. */
+  background: wheat; /* Fond bleu pour le bouton. */
+  color: white; /* Texte blanc pour le bouton. */
+  font-size: 16px; /* Taille du texte augmentée pour une meilleure lisibilité. */
+  border-radius: 5px; /* Coins arrondis pour un style uniforme. */
+  cursor: pointer; /* Change le curseur en pointeur au survol pour indiquer que le bouton est cliquable. */
+}
+
+form button:hover {
+  background: black; /* Change la couleur du bouton au survol pour un effet interactif. */
+}
+
+/* Section Artisan */
+.artisan {
+  max-width: 600px; /* Limite la largeur de chaque section artisan à 600px. */
+  margin: 20px auto; /* Centre la section horizontalement et ajoute une marge verticale. */
+  background: wheat; /* Fond blanc pour les sections artisan. */
+  padding: 15px; /* Ajoute un espace intérieur de 15px. */
+  border-radius: 5px; /* Coins légèrement arrondis. */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile pour un effet visuel élégant. */
+}
+
+.artisan h2 {
+  color: #333; /* Couleur du texte des titres de sections artisan en gris foncé. */
+}
+
+.artisan ul {
+  list-style: square; /* Remplace les puces par des carrés pour les listes de produits. */
+  padding-left: 20px; /* Décale les puces de 20px pour une meilleure visibilité. */
+}

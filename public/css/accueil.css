@@ -1,0 +1,73 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif; /* Définit la police principale pour tout le site. */
+    margin: 0; /* Supprime les marges par défaut autour de la page. */
+    padding: 0; /* Supprime les marges intérieures par défaut. */
+    background-color: #f9f9f9; /* Définit une couleur de fond grise claire pour le site. */
+    color: #333; /* Définit la couleur du texte en gris foncé pour une bonne lisibilité. */
+  }
+  
+  /* Barre de navigation */
+  nav {
+    background-color: #0a87fc; /* Couleur de fond verte pour la barre de navigation. */
+    padding: 10px 0; /* Ajoute un espacement en haut et en bas de la barre. */
+    text-align: center; /* Centre le contenu de la barre de navigation. */
+  }
+  
+  nav ul {
+    list-style: none; /* Supprime les puces des listes non ordonnées. */
+    margin: 0; /* Supprime les marges par défaut de la liste. */
+    padding: 0; /* Supprime les marges intérieures de la liste. */
+  }
+  
+  nav ul li {
+    display: inline; /* Affiche les éléments de la liste sur une seule ligne horizontale. */
+    margin: 0 15px; /* Ajoute un espacement horizontal de 15px entre chaque élément. */
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Supprime le soulignement des liens. */
+    color: white; /* Définit la couleur du texte des liens en blanc. */
+    font-weight: bold; /* Rend le texte des liens en gras. */
+  }
+  
+  /* En-tête */
+  header {
+    text-align: center; /* Centre le texte dans l'en-tête. */
+    padding: 20px 0; /* Ajoute un espacement en haut et en bas de l'en-tête. */
+    background-color: #1588e6; /* Couleur de fond verte pour l'en-tête. */
+    color: white; /* Définit la couleur du texte de l'en-tête en blanc. */
+  }
+  
+  /* Image */
+  img {
+    display: block; /* Force l'image à être un élément de bloc (évite que d'autres éléments s'alignent à côté). */
+    margin: 20px auto; /* Centre l'image horizontalement avec une marge verticale de 20px. */
+    border-radius: 10px; /* Ajoute des coins arrondis à l'image avec un rayon de 10px. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Applique une ombre subtile à l'image pour lui donner du relief. */
+  }
+  
+  /* Boutons */
+  a.btn {
+    display: inline-block; /* Rend les liens semblables à des boutons en les affichant comme des blocs en ligne. */
+    background-color: #056bdf; /* Couleur de fond verte pour les boutons. */
+    color: white; /* Couleur du texte des boutons en blanc. */
+    padding: 10px 20px; /* Ajoute un espacement intérieur vertical de 10px et horizontal de 20px. */
+    text-decoration: none; /* Supprime le soulignement des liens. */
+    border-radius: 5px; /* Ajoute des coins légèrement arrondis aux boutons. */
+    margin: 10px; /* Ajoute une marge de 10px autour des boutons. */
+  }
+  
+  a.btn:hover {
+    background-color: #0b78df; /* Change la couleur de fond des boutons au survol pour un effet interactif. */
+  }
+  
+  /* Pied de page */
+  footer {
+    background-color: #0969fa; /* Couleur de fond verte pour le pied de page. */
+    color: white; /* Couleur du texte en blanc dans le pied de page. */
+    text-align: center; /* Centre le contenu du pied de page. */
+    padding: 10px 0; /* Ajoute un espacement en haut et en bas du pied de page. */
+    margin-top: 20px; /* Ajoute un espacement au-dessus du pied de page pour séparer du contenu principal. */
+  }
+  

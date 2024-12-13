@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Définit le jeu de caractères comme UTF-8 pour supporter les caractères spéciaux. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet l'adaptation de la mise en page aux appareils mobiles. -->
+    <link  href="css/artisans.css"  rel="stylesheet"> <!-- Lien vers le fichier CSS externe pour styliser la page. -->
+    <title>Artisans</title> <!-- Titre affiché dans l'onglet du navigateur. -->
+</head>
+<body>
+    <h1>Liste des Artisans</h1> <!-- Titre principal de la page. -->
+    <ul> <!-- Début de la liste des artisans. -->
+        <% artisans.forEach(artisan => { %> <!-- Boucle pour parcourir chaque artisan dans le tableau `artisans`. -->
+            <li>
+                <strong><%= artisan.nom %> <%= artisan.prenom %></strong> - <!-- Affiche le nom et le prénom de l'artisan en gras. -->
+                Email: <%= artisan.email %>, Téléphone: <%= artisan.telephone %>, <!-- Affiche les coordonnées de l'artisan. -->
+                Spécialité: <%= artisan.specialite %> <!-- Affiche la spécialité de l'artisan. -->
+            </li>
+        <% }); %> <!-- Fin de la boucle. -->
+    </ul>
+
+    <h2>Ajouter un Artisan</h2> <!-- Sous-titre pour la section de formulaire. -->
+    <form action="/artisans" method="POST"> <!-- Début du formulaire pour ajouter un artisan. -->
+        <input type="text" name="nom" placeholder="Nom" required> <!-- Champ pour le nom de l'artisan. -->
+        <input type="text" name="prenom" placeholder="Prénom" required> <!-- Champ pour le prénom de l'artisan. -->
+        <input type="email" name="email" placeholder="Email" required> <!-- Champ pour l'email de l'artisan. -->
+        <input type="text" name="telephone" placeholder="Téléphone" required> <!-- Champ pour le numéro de téléphone. -->
+        <input type="text" name="specialite" placeholder="Spécialité" required> <!-- Champ pour la spécialité. -->
+        <button type="submit">Envoyer</button> <!-- Bouton pour soumettre le formulaire. -->
+    </form>
+
+    <h3>Artisans Participants</h3> <!-- Sous-titre pour la section des participants. -->
+    <% artisans.forEach(artisan => { %> <!-- Boucle pour afficher les artisans participants avec leurs produits. -->
+        <div class="artisan"> <!-- Conteneur pour un artisan. -->
+            <h2><%= artisan.nom %> <%= artisan.prenom %></h2> <!-- Affiche le nom et le prénom de l'artisan. -->
+            <p><strong>Spécialité :</strong> <%= artisan.specialite %></p> <!-- Affiche la spécialité de l'artisan. -->
+            <h3>Produits :</h3> <!-- Sous-titre pour les produits. -->
+            <% if (artisan.produits && artisan.produits.length > 0) { %> <!-- Vérifie si l'artisan a des produits. -->
+                <ul>
+                    <% artisan.produits.forEach(produit => { %> <!-- Boucle pour afficher chaque produit. -->
+                        <li><%= produit.nom %> - <%= produit.prix %> €</li> <!-- Affiche le nom et le prix du produit. -->
+                    <% }); %> <!-- Fin de la boucle des produits. -->
+                </ul>
+            <% } else { %> <!-- Si aucun produit n'est trouvé. -->
+                <p>Aucun produit ajouté pour cet artisan.</p> <!-- Message pour indiquer qu'il n'y a pas de produits. -->
+            <% } %> <!-- Fin de la vérification des produits. -->
+        </div>
+    <% }); %> <!-- Fin de la boucle des artisans participants. -->
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Corps de la page */
+body {
+  font-family: Arial, sans-serif; /* Police standard et lisible. */
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité. */
+  background-color: #f7f7f7; /* Fond légèrement gris. */
+  color: #333; /* Couleur de texte sombre. */
+}
+
+/* Titre principal */
+h1 {
+  text-align: center; /* Centre le texte du titre. */
+  color: #4CAF50; /* Couleur verte pour mettre en valeur le titre. */
+  margin-bottom: 30px; /* Ajoute un espacement sous le titre. */
+}
+
+/* Conteneur pour chaque artisan */
+.artisan {
+  background: #fff; /* Fond blanc pour se détacher du fond général. */
+  border: 1px solid #ddd; /* Bordure grise légère. */
+  border-radius: 5px; /* Coins arrondis pour un effet moderne. */
+  padding: 15px;
+  margin-bottom: 20px; /* Espacement entre les artisans. */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de relief. */
+}
+
+/* Nom de l'artisan */
+.artisan h2 {
+  margin-top: 0; /* Supprime la marge par défaut au-dessus du titre. */
+  color: #333; /* Couleur du texte. */
+}
+
+/* Spécialité */
+.artisan p {
+  font-size: 1em; /* Taille standard du texte. */
+  margin: 10px 0; /* Espacement entre les éléments. */
+}
+
+/* Section des produits */
+.produits {
+  margin-top: 10px; /* Espacement entre la spécialité et les produits. */
+}
+
+.produits strong {
+  display: block; /* Fait ressortir le titre de la section produits en ligne complète. */
+  margin-bottom: 5px; /* Ajoute de l'espace sous le titre des produits. */
+}
+
+/* Produit individuel */
+.produit {
+  margin-left: 20px; /* Décale les produits pour indiquer une hiérarchie. */
+  font-size: 0.9em; /* Texte légèrement plus petit pour les produits. */
+  color: #555; /* Couleur grisée pour différencier des titres. */
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Définit le jeu de caractères comme UTF-8 pour supporter les caractères spéciaux. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet l'adaptation de la mise en page aux appareils mobiles. -->
+    <link  href="css/artisans.css"  rel="stylesheet"> <!-- Lien vers le fichier CSS externe pour styliser la page. -->
+    <title>Artisans</title> <!-- Titre affiché dans l'onglet du navigateur. -->
+</head>
+<body>
+
+
+<section id="contact">
+  
+    <h2>Contactez-nous</h2>
+    <form action="/contact" method="POST">
+      <input type="text" name="nom" placeholder="Nom" required> <!-- Champ pour le nom de l'artisan. -->
+      <input type="text" name="prenom" placeholder="Prénom" required> <!-- Champ pour le prénom de l'artisan. -->
+      <input type="email" name="email" placeholder="Email" required> <!-- Champ pour l'email de l'artisan. -->
+      <input type="text" name="telephone" placeholder="Téléphone" required> <!-- Champ pour le numéro de téléphone. -->
+      <input type="text" name="specialite" placeholder="Spécialité" required> <!-- Champ pour la spécialité. -->
+      <input type="text" name="message"  placeholder="message" required>
+
+      <button type="submit">Envoyer</button> <!-- Bouton pour soumettre le formulaire. -->
+    </form>
+  </section>
+  </body>
+</html>  

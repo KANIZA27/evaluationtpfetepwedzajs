@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"> <!-- Définit le jeu de caractères en UTF-8 pour supporter les caractères spéciaux comme les accents. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet à la page d'être responsive et adaptée aux appareils mobiles. -->
+  <link href="css/liste.css" rel="stylesheet"> <!-- Lien vers le fichier CSS externe pour styliser la page. -->
+  <title>Liste des Artisans Participants</title> <!-- Titre de la page affiché dans l'onglet du navigateur. -->
+  <style>
+    /* Section pour inclure un CSS spécifique si besoin (vide dans ce cas). */
+  </style>
+</head>
+<body>
+  <h1>Liste des artisans participants à la fête</h1> <!-- Titre principal de la page. -->
+
+  <% artisans.forEach(artisan => { %> <!-- Boucle pour parcourir la liste des artisans participants. -->
+    <div class="artisan"> <!-- Conteneur pour chaque artisan avec une classe pour styliser. -->
+      <h2><%= artisan.nom %></h2> <!-- Affiche le nom de l'artisan comme un sous-titre. -->
+      <p><strong>Spécialité :</strong> <%= artisan.specialite %></p> <!-- Affiche la spécialité de l'artisan. -->
+      <div class="produits"> <!-- Conteneur pour la liste des produits de l'artisan. -->
+        <strong>Produits proposés :</strong> <!-- Indication que les produits suivants sont liés à cet artisan. -->
+        <% artisan.produits.forEach(produit => { %> <!-- Boucle pour parcourir les produits de chaque artisan. -->
+          <div class="produit"><%= produit.nom %> (<%= produit.prix %> €)</div> <!-- Affiche le nom et le prix de chaque produit. -->
+        <% }) %> <!-- Fin de la boucle des produits. -->
+      </div>
+    </div>
+  <% }) %> <!-- Fin de la boucle des artisans. -->
+
+</body>
+</html>
